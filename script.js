@@ -40,7 +40,14 @@ function operate(){
     num2 = display.innerHTML;
     if (operator == "+"){
         display.innerHTML = Number(num1) + Number(num2);
+    } else if (operator == "*"){
+        display.innerHTML = Number(num1) * Number(num2);
+    } else if (operator == "/"){
+        display.innerHTML = Number(num1) / Number(num2);
+    } else if (operator == "-"){
+        display.innerHTML = Number(num1) - Number(num2);
     } else {
-        display.innerHTML = 69;
+        display.innerHTML = "ERROR";
     }
+    
 }
