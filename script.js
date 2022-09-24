@@ -21,19 +21,19 @@ function add(){
 function subtract(){
     num1 = Number(display.innerHTML);
     operator = "-";
-    display.innerHTML = "-";
+    display.innerHTML = "&#8722;";
 }
 
 function multiply(){
     num1 = Number(display.innerHTML);
     operator = "*";
-    display.innerHTML = "*";
+    display.innerHTML = "&#215;";
 }
 
 function divide(){
     num1 = Number(display.innerHTML);
     operator = "/";
-    display.innerHTML = "/";
+    display.innerHTML = "&#247;";
 }
 
 function operate(){
