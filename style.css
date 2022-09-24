@@ -39,8 +39,8 @@ body {
 
 #operator,
 #number{
-    border: red solid;
-    background-color: red;
+    border: #B70000 solid;
+    background-color: #B70000;
     color: white;
     border-radius: 5px;
     font-size: 40px;
@@ -50,8 +50,8 @@ body {
 }
 
 #operator-equal {
-    background-color: orange;
-    border: orange solid;
+    background-color: #D25516;
+    border: #D25516 solid;
     border-radius: 5px;
     color: white;
     font-size: 40px;
