@@ -36,7 +36,10 @@ body {
     margin-top: 5px;
     margin-bottom: 20px;
     display: flex;
-    justify-content: center;
+    justify-content: flex-end;
+    align-items: center;
+    padding-right: 15px;
+    font-size: 75px;
 }
 
 .backspace {
