@@ -20,15 +20,24 @@ function add(){
 }
 
 function subtract(){
-
+    num1 = Number(display.innerHTML);
+    operator = "-";
+    display.innerHTML = "-";
+    return num1;
 }
 
 function multiply(){
-
+    num1 = Number(display.innerHTML);
+    operator = "*";
+    display.innerHTML = "*";
+    return num1;
 }
 
 function divide(){
-
+    num1 = Number(display.innerHTML);
+    operator = "/";
+    display.innerHTML = "/";
+    return num1;
 }
 
 function operate(){
