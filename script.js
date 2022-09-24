@@ -1,7 +1,7 @@
 let display = document.getElementById('input');
 
 function displayChange(inp){
-    if (display.innerHTML == 0 || display.innerHTML == "+"){
+    if (display.innerHTML == 0 || display.innerHTML == "+" || display.innerHTML == "/" || display.innerHTML == "*" || display.innerHTML == "-"){
         display.innerHTML = inp;
     } else {
         display.innerHTML += inp;
