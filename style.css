@@ -24,7 +24,7 @@ body {
     display: flex;
     flex-direction: column;
     font-size: 40px;
-    align-items:flex-end
+    align-items: space-between;
 }
 
 .input_screen {
@@ -42,6 +42,25 @@ body {
     font-size: 75px;
 }
 
+.top_buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+
+}
+
+.clear {
+    background-color: gray;
+    border: gray solid;
+    border-radius: 5px;
+    width: 60px;
+    height: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    font-size: 15px;
+}
 .backspace {
     background-color: gray;
     border: gray solid;
@@ -55,6 +74,7 @@ body {
     padding-bottom: 12px;
     margin-top: 50px;
     font-size: 40px;
+    margin-left: auto;
 }
 
 .buttons {
@@ -90,6 +110,7 @@ body {
 #number:active,
 #operator:active,
 #operator-equal:active,
-#del:active{
+#del:active,
+#clear:active{
     transform: translateY(4px);
 }
