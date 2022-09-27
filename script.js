@@ -14,9 +14,13 @@ let operator = 0;
 
 //backspace button code
 function backspace(){
-    let del = display.innerHTML;
-    let result = del.toString().substring(0, del.toString().length - 1)
+    if (display.innerHTML.length >= 2){
+        let del = display.innerHTML;
+        let result = del.toString().substring(0, del.toString().length - 1)
     display.innerHTML = result;
+    } else {
+        display.innerHTML = 0;
+    }    
 }
 
 function add(){
