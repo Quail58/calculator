@@ -12,6 +12,13 @@ let num1 = 0;
 let num2 = 0;
 let operator = 0;
 
+//backspace button code
+function backspace(){
+    let del = display.innerHTML;
+    let result = del.toString().substring(0, del.toString().length - 1)
+    display.innerHTML = result;
+}
+
 function add(){
     num1 = Number(display.innerHTML);
     operator = "+";
