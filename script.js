@@ -1,7 +1,7 @@
 let display = document.getElementById('input');
 
 function displayChange(inp){
-    if (display.innerHTML == 0 || display.innerHTML == "+" || display.innerHTML == "÷" || display.innerHTML == "−" || display.innerHTML == "×"){
+    if (display.innerHTML == 0 || display.innerHTML == "+" || display.innerHTML == "÷" || display.innerHTML == "−" || display.innerHTML == "×" || display.innerHTML == "LOL NO" || display.innerHTML == "ERROR"){
         display.innerHTML = inp;
     } else {
         display.innerHTML += inp;
@@ -26,6 +26,20 @@ function backspace(){
 //code for the clear button
 function clearscrn(){
     display.innerHTML = 0;
+}
+
+function decimal(){
+    let result = (display.innerHTML - Math.floor(display.innerHTML)) ==0.0;
+
+    if (!display.innerHTML.endsWith(".")){
+        if (result){
+            display.innerHTML += ".";
+        } else {
+            return;
+        }
+    } else {
+        return;
+    }
 }
 
 function add(){
@@ -54,14 +68,16 @@ function divide(){
 
 function operate(){
     num2 = display.innerHTML;
-    if (operator == "+"){
-        display.innerHTML = Number(num1) + Number(num2);
+    if (num2 == 0 & operator == "/"){
+        display.innerHTML = "LOL NO";
     } else if (operator == "*"){
         display.innerHTML = Number(num1) * Number(num2);
     } else if (operator == "/"){
         display.innerHTML = Number(num1) / Number(num2);
     } else if (operator == "-"){
         display.innerHTML = Number(num1) - Number(num2);
+    } else if (operator == "+"){
+        display.innerHTML = Number(num1) + Number(num2);
     } else {
         display.innerHTML = "ERROR";
     }
