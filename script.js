@@ -23,6 +23,11 @@ function backspace(){
     }    
 }
 
+//code for the clear button
+function clearscrn(){
+    display.innerHTML = 0;
+}
+
 function add(){
     num1 = Number(display.innerHTML);
     operator = "+";
